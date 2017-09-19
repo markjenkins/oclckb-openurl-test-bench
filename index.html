@@ -8,6 +8,7 @@
 
 <ul>
     <li><a href="#journalsearch">Journal Search</a></li>
+    <li><a href="#booksearch">Book Search</a></li>
 </ul>
 
 <hr>
@@ -70,5 +71,43 @@
 </form>
 
 <hr>
+
+<h2 id="booksearch">Book Search</h2>
+<p class="onerequiredparam">
+(must use at least one of the fields marked with * )
+</p>
+
+<form action="/kbsearch.py" method="POST"
+      enctype="application/x-www-form-urlencoded">
+  <label for="bsearch_btitle" class="onerequiredparam">*Book title</label>
+  <input name="rft.btitle" id="bsearch_btitle">
+
+  <label for="bsearch_isbn" class="onerequiredparam">*ISBN</label>
+  <input name="rft.isbn" id="bsearch_isbn">
+
+  <label for="bsearch_oclcnum" class="onerequiredparam">*OCLC number</label>
+  <input name="rft.oclcnum" id="bsearch_oclcnum">
+
+  <label for="bsearch_pub" class="onerequiredparam">*Publisher name</label>
+  <input name="rft.pub" id="bsearch_pub">
+
+  <label for="bsearch_aufirst">First author's first name</label>
+  <input name="rft.aufirst" id="bsearch_aufirst">
+
+  <label for="bsearch_auinit">First author's first and middle initials</label>
+  <input name="rft.auinit" id="bsearch_auinit">
+
+  <label for="bsearch_aulast">First author's last name</label>
+  <input name="rft.aulast" id="bsearch_aulast">
+
+  <label for="bsearch_doi_pmid">DOI or PMID</label>
+  <input name="rft.id" id="bsearch_doi_pmid">
+
+  <label for="bsearch_additional_params">Additional search paramaters</label>
+  <input name="additional_params" id="bsearch_additional_params">
+
+  <input type="submit">
+</form>
+
 </body>
 </html>
