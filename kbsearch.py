@@ -59,12 +59,14 @@ def main():
                                           # but lets be explicit
                          additional_params_append )
     print("""<!DOCTYPE html>
-<title>OCLC KB Search Result</title>
-<ul>
+<title>OCLC KB Search Result</title>""")
+    if len(return_json) > 0:
+        print("""<ul>
 %s
 </ul>
 """ %  list_of_results(return_json))
-
+    else: # 0 results
+        print( "<p>No results found</p>")
     
 if __name__=="__main__":
     main()
