@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 # oclckb.py -- Provide an api for the oclc knowledge base
 #
 # Copyright University of Winnipeg 2017
