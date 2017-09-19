@@ -1,5 +1,13 @@
 #!/usr/bin/env python3
 
+# oclckb -- Provide an api for the oclc knowledge base
+#
+# Copyright University of Winnipeg 2017
+#
+# All rights reserved
+#
+# @author Mark Jenkins <ma.jenkins@uwinnipeg.ca>
+
 import cgi
 import json
 

@@ -1,5 +1,13 @@
 #!/usr/bin/env python3
 
+# kbsearch.py -- Pass on a search to the OCLC KB and display results as links
+#
+# Copyright University of Winnipeg 2017
+#
+# All rights reserved
+#
+# @author Mark Jenkins <ma.jenkins@uwinnipeg.ca>
+
 import cgitb
 cgitb.enable()
 # use when going to production
@@ -8,7 +16,7 @@ cgitb.enable()
 import cgi
 from urllib.parse import urlencode
 
-from kbprox import oclc_kb_openurl
+from oclckb import oclc_kb_openurl
 
 def list_of_results(return_json):
     return '\n'.join(
