@@ -1,1 +1,1 @@
-# oclckb-openurl-test-bench
+Install into a webserver that can serve up style.css and index.html and run /kbsearch.py as a cgi program.

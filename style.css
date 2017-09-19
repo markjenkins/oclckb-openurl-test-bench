@@ -1,0 +1,12 @@
+label {
+    display: block;
+}
+
+input {
+    display: block;
+    margin-bottom: 1.5em;
+}
+
+.onerequiredparam {
+    font-weight: bold;
+}

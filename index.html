@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<ul>
+    <li><a href="#journalsearch">Journal Search</a></li>
+</ul>
+
+<hr>
+
+<h2 id="journalsearch">Journal Search</h2>
+<p class="onerequiredparam">
+(must use at least one of the fields marked with * )
+</p>
+<form action="/kbsearch.py" method="POST"
+      enctype="application/x-www-form-urlencoded">
+  <label for="jsearch_jtitle" class="onerequiredparam">*Journal title</label>
+  <input name="rft.jtitle" id="jsearch_jtitle">
+
+  <label for="jsearch_atitle">Article title</label>
+  <input name="rft.atitle" id="jsearch_atitle">
+  
+  <label for="jsearch_issn" class="onerequiredparam">*ISSN</label>
+  <input name="rft.issn" id="jsearch_issn">
+
+  <label for="jsearch_eissn" class="onerequiredparam">*e-ISSN</label>
+  <input name="rft.eissn" id="jsearch_eissn">
+
+  <label for="jsearch_oclcnum" class="onerequiredparam">*OCLC number</label>
+  <input name="rft.oclcnum" id="jsearch_oclcnum">
+
+  <label for="jsearch_pub" class="onerequiredparam">*Publisher name</label>
+  <input name="rft.pub" id="jsearch_pub"> 
+
+  <label for="jsearch_date">Publication date</label>
+  <input name="rft.date" id="jsearch_date">
+
+  <label for="jsearch_volume">Journal volume</label>
+  <input name="rft.volume" id="jsearch_volume">
+
+  <label for="jsearch_issue">Journal issue</label>
+  <input name="rft.issue" id="jsearch_issue">
+
+  <label for="jsearch_spage">Start page</label>
+  <input name="rft.spage" id="jsearch_spage">
+
+  <label for="jsearch_epage">End page</label>
+  <input name="rft.epage" id="jsearch_epage">
+
+  <label for="jsearch_aufirst">First author's first name</label>
+  <input name="rft.aufirst" id="jsearch_aufirst">
+
+  <label for="jsearch_auinit">First author's first and middle initials</label>
+  <input name="rft.auinit" id="jsearch_auinit">
+
+  <label for="jsearch_aulast">First author's last name</label>
+  <input name="rft.aulast" id="jsearch_aulast">
+
+  <label for="jsearch_pmid">DOI or PMID</label>
+  <input name="rft.id" id="jsearch_doi_pmid>"
+  
+  <label for="jsearch_additional_params">Additional search paramaters</label>
+  <input name="additional_params" id="jsearch_additional_params">
+
+  <input type="submit">
+</form>
+
+<hr>
+</body>
+</html>
